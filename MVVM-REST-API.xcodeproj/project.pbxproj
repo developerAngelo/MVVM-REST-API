@@ -15,6 +15,8 @@
 		7FD954AE261A98E300AE7F7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FD954AC261A98E300AE7F7E /* LaunchScreen.storyboard */; };
 		7FD954B9261A98E500AE7F7E /* MVVM_REST_APITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD954B8261A98E500AE7F7E /* MVVM_REST_APITests.swift */; };
 		7FD954C4261A98E500AE7F7E /* MVVM_REST_APIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD954C3261A98E500AE7F7E /* MVVM_REST_APIUITests.swift */; };
+		7FD954D6261AEF3200AE7F7E /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD954D5261AEF3200AE7F7E /* UserModel.swift */; };
+		7FD954DC261AF36700AE7F7E /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD954DB261AF36700AE7F7E /* Parser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		7FD954BF261A98E500AE7F7E /* MVVM-REST-APIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MVVM-REST-APIUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FD954C3261A98E500AE7F7E /* MVVM_REST_APIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVM_REST_APIUITests.swift; sourceTree = "<group>"; };
 		7FD954C5261A98E500AE7F7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7FD954D5261AEF3200AE7F7E /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		7FD954DB261AF36700AE7F7E /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +103,12 @@
 		7FD954A0261A98B500AE7F7E /* MVVM-REST-API */ = {
 			isa = PBXGroup;
 			children = (
+				7FD954E5261AF90600AE7F7E /* Storyboard */,
+				7FD954E0261AF58000AE7F7E /* Controller */,
+				7FD954DA261AF05A00AE7F7E /* ViewModel */,
+				7FD954D4261AEF0900AE7F7E /* Model */,
 				7FD954A1261A98B500AE7F7E /* AppDelegate.swift */,
 				7FD954A3261A98B500AE7F7E /* SceneDelegate.swift */,
-				7FD954A5261A98B500AE7F7E /* ViewController.swift */,
-				7FD954A7261A98B700AE7F7E /* Main.storyboard */,
 				7FD954AA261A98E300AE7F7E /* Assets.xcassets */,
 				7FD954AC261A98E300AE7F7E /* LaunchScreen.storyboard */,
 				7FD954AF261A98E300AE7F7E /* Info.plist */,
@@ -126,6 +132,38 @@
 				7FD954C5261A98E500AE7F7E /* Info.plist */,
 			);
 			path = "MVVM-REST-APIUITests";
+			sourceTree = "<group>";
+		};
+		7FD954D4261AEF0900AE7F7E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7FD954D5261AEF3200AE7F7E /* UserModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7FD954DA261AF05A00AE7F7E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7FD954DB261AF36700AE7F7E /* Parser.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7FD954E0261AF58000AE7F7E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7FD954A5261A98B500AE7F7E /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7FD954E5261AF90600AE7F7E /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				7FD954A7261A98B700AE7F7E /* Main.storyboard */,
+			);
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +298,8 @@
 			files = (
 				7FD954A6261A98B500AE7F7E /* ViewController.swift in Sources */,
 				7FD954A2261A98B500AE7F7E /* AppDelegate.swift in Sources */,
+				7FD954DC261AF36700AE7F7E /* Parser.swift in Sources */,
+				7FD954D6261AEF3200AE7F7E /* UserModel.swift in Sources */,
 				7FD954A4261A98B500AE7F7E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
